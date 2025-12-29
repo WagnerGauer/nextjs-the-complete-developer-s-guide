@@ -1,7 +1,13 @@
-import React from "react";
+import Image from "next/image";
+import scaleImg from "public/scale.jpg";
+import Hero from "@/components/hero";
 
-function ScalePage() {
-  return <div>ScalePage</div>;
+export default function ScalePage() {
+  return (
+    <Hero
+      imgData={scaleImg}
+      imgAlt="Steal Factory"
+      title="Scale Your App for Infinity"
+    />
+  );
 }
-
-export default ScalePage;

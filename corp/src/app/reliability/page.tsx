@@ -1,7 +1,13 @@
-import React from "react";
+import Image from "next/image";
+import reliabilityImg from "public/reliability.jpg";
+import Hero from "@/components/hero";
 
-function ReliabilityPage() {
-  return <div>ReliabilityPage</div>;
+export default function ReliabilityPage() {
+  return (
+    <Hero
+      imgData={reliabilityImg}
+      imgAlt="welding"
+      title="Super High Reliability Hosting"
+    />
+  );
 }
-
-export default ReliabilityPage;
